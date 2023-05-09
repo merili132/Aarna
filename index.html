@@ -1,135 +1,146 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!--javascript-->
+    <script src="./js/index.js"></script>
+    <!--bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
-<head>
-  <link rel="stylesheet" href="./css/main.css" />
-  <!--javascript-->
-  <script src="./js/index.js"></script>
-  <!--bootstrap-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-
-<body>
-  <div class="header">
-    <video autoplay loop muted class="bg-video">
-      <source src="./video.mp4" type="video/mp4" />
-    </video>
-    <div class="logo_tekst">
-      <div>
-        <p class="header_tekst">KÕRGEKVALITEEDILISED</p>
-        <p class="header_tekst">JA VASTUPIDAVAD</p>
-        <p class="header_tekst">EHITUSLAHENDUSED</p>
-      </div>
-      <img class="logo" src="/Images/logo.png" />
-    </div>
-
-    <div>
-      <a class="button" onclick="scrollToSection('meie__lugu')">˅</a>
-    </div>
-  </div>
-
-  <div class="body">
-    <!-----------------NAVIGATOSIOONIRIBA--------------->
-    <div id="mySidenav" class="sidenav">
-      <div id="sidenav_content" class="sidenav_content">
-        <a href="#meie__lugu">MEIE LUGU / VISIOON</a>
-        <a href="#TGV">TEGEVUSVALDKONNAD</a>
-        <a href="#tehtud_t88d">TEHTUD TÖÖD</a>
-        <a href="#KONT">KONTAKT</a>
-        <img class="nav_logo" src="/Images/logo.png" />
-      </div>
-    </div>
-    <!---------------------MAIN------------------------->
-    <div class="content">
-      <!--------------------LUGU-VISIOON------------------------->
-      <h6 id="meie__lugu">Aarna Ehitus</h6>
-      <div id="meie_lugu">
-        <p>
-          Meie eesmärk on pakkuda kõrgekvaliteedilisi ja vastupidavaid
-          ehituslahendusi, mis ületavad ootusi. Meie meeskond on kogenud ja
-          professionaalne ning pakume laia valikut teenuseid alates
-          uusehitustest kuni renoveerimisteni. Energiasäästlikud ja
-          keskkonnasõbralikud lahendused on meie erialaks. Visioon on olla
-          number 1 ehitusettevõte klienti mõtetes.
-        </p>
-      </div>
-      <!-----------------TEGEVUSVALDKONNAD----------------------->
-      <h6 id="TGV">Tegevusvaldkonnad</h6>
-      <div id="Tegevusvaldkonnad">
-        <div class="pilt_parem">
-          <button class="nupp" href="#tehtud_t88d">Vaata tehtud töid</button>
-          <div class="hoidja">
-            <img class="katus" src="/Images/katus2.png" />
-            <p class="tekst">Katusefermide paigaldus</p>
-            <img class="katus2" src="/Images/katuse_maja.png" />
-          </div>
-        </div>
-
-        <div class="pilt_parem">
-          <div class="hoidja">
-            <img class="katus" src="/Images/põranda_maja.png" />
-            <img class="katus2" src="/Images/põrand.png" />
-          </div>
-          <button class="nupp" href="#tehtud_t88d">Vaata tehtud töid</button>
-        </div>
-      </div>
-      <!---------------------TEHTUD-TÖÖD------------------------->
-      <h6 id="tehtud_t88d">Tehtud tööd</h6>
-      <div id="done">
-        <img class="pilt" src="/Images/eramu1.jpeg" />
-        <img class="pilt" src="/Images/eramu2.jpeg" />
-        <img class="pilt" src="/Images/katus.jpeg" />
-        <img class="pilt" src="/Images/katusekate.jpeg" />
-        <img class="pilt" src="/Images/siseviimistlus.jpeg" />
-        <img class="pilt" src="/Images/katusetöö.jpeg" />
-        <img class="pilt" src="/Images/porand.jpeg" />
-        <img class="pilt" src="/Images/porand.jpeg" />
-        <img class="pilt" src="/Images/porand.jpeg" />
-      </div>
-
-      <!------------------------KONTAKT-------------------------->
-      <h6 id="KONT">Kontakt</h6>
-      <div id="kontakt">
-        <p>
-          Küsimuste korral võib julgelt ühendust võtta telefonil +372 5301
-          3214
-        </p>
-        <p>Või emaili teel</p>
+  <body>
+    <div class="header">
+      <video autoplay loop muted class="bg-video">
+        <source src="./video.mp4" type="video/mp4" />
+      </video>
+      <div class="logo_tekst">
         <div>
-          <label class="spec">Email:</label><br />
-          <input type="email" id="email" name="email" placeholder="email..." /><br /><br />
-          <label class="spec">Lisainfo:</label><br />
-          <input type="text" id="linfo" name="linfo" placeholder="lisainfo..." /><br /><br />
-          <button id="send" name="saada" onclick="clearText()">Saada</button>
+          <p class="header_tekst">KÕRGEKVALITEEDILISED</p>
+          <p class="header_tekst">JA VASTUPIDAVAD</p>
+          <p class="header_tekst">EHITUSLAHENDUSED</p>
         </div>
+        <img class="logo" src="/Images/logo.png" />
+      </div>
 
+      <div>
+        <a class="button" onclick="scrollToSection('meie__lugu')">˅</a>
       </div>
     </div>
-  </div>
-  <!---------------------JALUS------------------------>
-  <footer>
-    <section>
-      <div class="container-fluid">
-        <div class="foot row">
-          <div class="col-md-6">
-            <h4>Aarna OÜ</h4>
-            <p>+372 5301 3214</p>
-            <p>marko.aarna@live.com</p>
-            <p>Aarnamäe, Nõgiaru küla, Nõo vald, 61616, Tartu, Eesti</p>
+
+    <div class="body">
+      <!-----------------NAVIGATOSIOONIRIBA--------------->
+      <div id="mySidenav" class="sidenav">
+        <div id="sidenav_content" class="sidenav_content">
+          <a href="#meie__lugu">MEIE LUGU / VISIOON</a>
+          <a href="#TGV">TEGEVUSVALDKONNAD</a>
+          <a href="#tehtud_t88d">TEHTUD TÖÖD</a>
+          <a href="#KONT">KONTAKT</a>
+          <img class="nav_logo" src="/Images/logo.png" />
+        </div>
+      </div>
+      <!---------------------MAIN------------------------->
+      <div class="content">
+        <!--------------------LUGU-VISIOON------------------------->
+        <h6 id="meie__lugu">Aarna Ehitus</h6>
+        <div id="meie_lugu">
+          <p>
+            Meie eesmärk on pakkuda kõrgekvaliteedilisi ja vastupidavaid
+            ehituslahendusi, mis ületavad ootusi. Meie meeskond on kogenud ja
+            professionaalne ning pakume laia valikut teenuseid alates
+            uusehitustest kuni renoveerimisteni. Energiasäästlikud ja
+            keskkonnasõbralikud lahendused on meie erialaks. Visioon on olla
+            number 1 ehitusettevõte klienti mõtetes.
+          </p>
+        </div>
+        <!-----------------TEGEVUSVALDKONNAD----------------------->
+        <h6 id="TGV">Tegevusvaldkonnad</h6>
+        <div id="Tegevusvaldkonnad">
+          <div class="pilt_parem">
+            <button class="nupp" href="#tehtud_t88d">Vaata tehtud töid</button>
+            <div class="hoidja">
+              <img class="katus" src="/Images/katus2.png" />
+              <p class="tekst">Katusefermide paigaldus</p>
+              <img class="katus2" src="/Images/katuse_maja.png" />
+            </div>
           </div>
-          <div class="col-md-6">
-            <p>Reg nr: 12333209</p>
-            <p>KMKR: EE101917911</p>
+
+          <div class="pilt_parem">
+            <div class="hoidja">
+              <img class="katus" src="/Images/põranda_maja.png" />
+              <img class="katus2" src="/Images/põrand.png" />
+            </div>
+            <button class="nupp" href="#tehtud_t88d">Vaata tehtud töid</button>
+          </div>
+        </div>
+        <!---------------------TEHTUD-TÖÖD------------------------->
+        <h6 id="tehtud_t88d">Tehtud tööd</h6>
+        <div id="done">
+          <img class="pilt" src="./Images/eramu1.jpeg" />
+          <img class="pilt" src="./Images/eramu2.jpeg" />
+          <img class="pilt" src="./Images/katus.jpeg" />
+          <img class="pilt" src="./Images/katusekate.jpeg" />
+          <img class="pilt" src="./Images/siseviimistlus.jpeg" />
+          <img class="pilt" src="./Images/katusetöö.jpeg" />
+          <img class="pilt" src="./Images/porand.jpeg" />
+          <img class="pilt" src="./Images/porand.jpeg" />
+          <img class="pilt" src="./Images/porand.jpeg" />
+        </div>
+
+        <!------------------------KONTAKT-------------------------->
+        <h6 id="KONT">Kontakt</h6>
+        <div id="kontakt">
+          <p>
+            Küsimuste korral võib julgelt ühendust võtta telefonil +372 5301
+            3214
+          </p>
+          <p>Või emaili teel</p>
+          <div>
+            <label class="spec">Email:</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email..."
+            /><br /><br />
+            <label class="spec">Lisainfo:</label><br />
+            <input
+              type="text"
+              id="linfo"
+              name="linfo"
+              placeholder="lisainfo..."
+            /><br /><br />
+            <button id="send" name="saada" onclick="clearText()">Saada</button>
           </div>
         </div>
       </div>
-    </section>
-    <hr />
-    <section>
-      <p>Aarna OÜ © 2023</p>
-    </section>
-  </footer>
-</body>
-
+    </div>
+    <!---------------------JALUS------------------------>
+    <footer>
+      <section>
+        <div class="container-fluid">
+          <div class="foot row">
+            <div class="col-md-6">
+              <h4>Aarna OÜ</h4>
+              <p>+372 5301 3214</p>
+              <p>marko.aarna@live.com</p>
+              <p>Aarnamäe, Nõgiaru küla, Nõo vald, 61616, Tartu, Eesti</p>
+            </div>
+            <div class="col-md-6">
+              <p>Reg nr: 12333209</p>
+              <p>KMKR: EE101917911</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <p>Aarna OÜ © 2023</p>
+      </section>
+    </footer>
+  </body>
 </html>
